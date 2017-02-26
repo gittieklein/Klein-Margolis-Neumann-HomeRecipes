@@ -1,0 +1,357 @@
+/*the styling for the website*/
+
+/*whole website*/
+/*the whole page should have a margin on the side*/
+*{
+    width: 1100px;
+    margin: auto;
+    vertical-align: bottom;
+    font-family: Calibri;
+}
+
+body{
+    background-color: #F5F5F5; /*The bacground of the entire website*/
+}
+
+/*the header/menu*/
+/*edit the size of the logo*/
+#logo img{
+    height:150px;
+    width:auto;
+}
+
+/*This is a search bar to search for anything on the website*/
+#search {
+    position:absolute;       /*to position the search bar near the menu*/
+    margin-left: 840px;      /*to position the searchbar on the right side of the page*/
+    margin-top: 50px;
+    width: 200px;
+    height: 46px;
+    box-sizing: border-box;  /*include the border in within the size*/
+    border: 2px solid #ccc;
+    border-radius: 4px;      /*round the edges of the search bar*/
+    font-size: 16px;
+    background-color: white;
+    background-size: 15%;
+    background-position: 2px 2px;
+                             /*an image of a magnifying glass for the search bar*/
+    background-image: url('http://www.clker.com/cliparts/9/T/2/h/X/7/search-icon-md.png');
+    background-repeat: no-repeat; /*only display the image onece*/
+    padding: 12px 20px 12px 40px;  /*create white space around the image*/
+    z-index: 2;
+   
+}
+
+/*search tab to generate the search*/
+#submit{
+    margin-left: 1040px;
+    margin-top:50px;
+    position:absolute;      /*to position the search tab near the menu*/
+    width: 60px;
+    height: 46px;
+    z-index: 2;
+}
+
+/*A tab that is a link for the user to login, or create an account*/
+.login{
+    
+    float: right;
+    text-indent: 915px;    /*to position the text to the right of the page*/
+    font-size: 25px;
+    font-family:Calibri;
+    
+   
+}
+
+.login a{
+    color: #663300;
+    text-decoration:none;  /*do not underline the link*/
+}  
+
+/*Make the vertical line between the "Join Free" and "Login" option a different color*/
+.login span{
+    color:#a91f23;
+}
+
+/*Create a hover style for the "Join Free" and "Login"*/
+.login a:hover{
+    color: #a91f23;
+}
+
+/*#horizontal-list {
+    position:absolute;           to position the menu near the search bar
+    height:20px;
+    border-top:solid #a91f23 3px;
+    border-bottom:solid #a91f23 3px;
+    width: 790px;
+    padding-top: 20px;          to center the menu between the two borders
+    font-weight: bold;
+}
+    
+#horizontal-list li {
+    position:relative;          to position the menu near the search bar
+    top:-15px;                  to center the menu between the two borders
+    font-size:25px;
+    display:inline;             to create a horizontal menu
+    padding:10px 20px;           space between the menu options.
+    font-family:Calibri;
+}
+    
+#horizontal-list li a{
+    text-decoration: none;      do not underline the links
+    color:#663300;
+}
+
+styling for when hovering over a link
+#horizontal-list li a:hover{ 
+    color: #a91f23;
+}*/
+
+/*footer*/
+/*this styling is for the whole footer
+the height should be enough to fit the content
+the width should go across the whole screen
+float is set to bottom so it should be under the body*/
+.footer{
+    height: fit-content;
+    width: 100%;
+    font-family: Calibri;
+    float: bottom;
+    position: relative; 
+    margin-top: 70px;
+    border-top: #a91f23;
+    border-style: solid;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+}
+   
+/*this styling is for the list in the footer
+the text shoudl be centered
+the font should be bold
+and there should be no bullets*/
+.footer ul li{
+    text-align: center;
+    font-weight: bold;
+    list-style: none;
+    margin-left: -40px;
+}
+
+/*this is styling for the links in the footer
+they should not be underlined*/
+.footer a:link{
+   color: #663300;
+   text-decoration: none;
+}
+
+/*styling for when hovering over a link
+it should change to white
+and it should not be underlined*/
+.footer a:hover{
+    color: #a91f23;
+    text-decoration: none;
+}
+
+/*the copy right should be right aligned*/
+.footer p{
+    text-align: right;
+    color: #663300;
+    font-family: Calibri;
+    font-weight: bold; 
+}
+
+/*home page*/
+/*the images should be boxes that are links to pages
+the transitions are for the hover that it will change when the user hovers over the image
+the object fit cover is so when the image is set to a size, the rest of the image is cut off*/
+body div img{
+    position: relative;
+    width: 550px; 
+    height: 250px;
+    object-fit: cover; 
+}
+
+#mainslide{
+    position: relative;
+    width: 550px; 
+    height: 250px;
+    margin-left: 550px;
+    object-fit: cover; 
+}
+#saladslide{
+    position: relative;
+    width: 550px; 
+    height: 250px;
+    margin-left: 0px;
+    object-fit: cover;
+}
+#soupslide{
+    margin-left:550px;  
+    position: relative;
+    width: 550px; 
+    height: 250px;
+    object-fit: cover;
+}
+#sideslide{
+    position: relative;
+    width: 550px; 
+    height: 250px;
+    margin-left: 0px;
+    object-fit: cover;
+}
+#dessertslide{
+    margin-left:550px;  
+    position: relative;
+    width: 550px; 
+    height: 250px;
+    object-fit: cover;
+}
+ /*add a space between the header and the body*/
+#menuspace{
+    padding:40px;
+}
+
+/*this effect is only for things that are the 2nd child so it should not effect the logo*/
+body a div img:nth-child(2){
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+/*the image turns black and white when hovered over*/
+body a div img:nth-child(2):hover{
+    -webkit-filter: grayscale(60%);
+}
+
+/*the styling of all the texts for the recipe categories*/
+body a div p{
+    position: absolute;
+    text-decoration: none;
+    font-family: Calibri;
+    color: #a91f23;
+    font-size: 115px;
+    margin-top: 60px;
+}
+
+/*format the text for each type of recipe*/
+#mains p{
+    text-indent: 115px;
+}
+#salads p{
+    text-indent: 660px;
+}
+#soups p{
+    margin-left: 115px;
+}
+#sides p{
+    text-indent: 715px;
+}
+#desserts p{
+    text-indent:40px;
+}
+
+/*sign in/join*/
+.sign{
+    position: relative;
+    height: auto;
+    width: 550px;
+    display: initial;
+    margin: auto;
+}
+.sign form{
+    font-size: 16px;
+    font-family: Calibri;
+    text-align: center;
+}
+.sign form input{
+    font-size: 16px;
+    font-family: Calibri;
+    margin: 1px;
+}
+.sign form p{
+    font-size: 12px;
+}
+.sign form input{
+    width: 215px;
+    height: 30px;
+}
+
+/*Submit recipe*/ 
+.submitRecipe h1{
+    font-family: Calibri;
+}
+.submitRecipe{
+    font-size: 16px;
+    font-family: Calibri; 
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+.submitRecipe form textarea{
+    font-size: 16px;
+    font-family: Calibri;
+    height:  250px; 
+    width: 450px;  
+}
+.submitRecipe form input{
+    width: 100px;
+}
+.submitRecipe .recipetitle{
+    position: relative;
+    height: auto;
+    width: 200px;
+    margin: auto;
+}
+.submitRecipe .submitRecipeButton{
+    width: 200px;
+    font-size: 16px;
+    font-family: Calibri;
+
+}
+.submitRecipe form select{
+    font-size: 16px;
+    font-family: Calibri;
+    width: 100px;
+}
+
+/*thank you*/
+#thanks{
+    text-align: center;
+    color: #a91f23;
+    font-family: calibri;
+    font-size: 25px;
+}
+
+/*recipe pages*/
+.pgtitle{
+    font-family: Calibri;
+    font-size: 40px;
+    text-align: center;
+    color: #F5F5F5;
+    background-color: #a91f23;
+}
+.recipetitle{
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: underline;
+
+}
+
+/*contact us*/
+#contact input{
+    width: 215px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+}
+#contact h1{
+    text-align: center;
+}
+
+#contact textarea{
+    width: 500px;
+    height: 300px;
+    padding: 5px;
+    font-size: 16px;
+}
