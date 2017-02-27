@@ -1,3 +1,2 @@
-## sMagicline Demos / Examples
-
-Here is a demo
+## HomeRecipes Website
+Group Project
