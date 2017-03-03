@@ -8,6 +8,7 @@
         <!--attach the css file-->
         <link rel="stylesheet" href="Recipes.css">
         <!--Logo that is connected to a link to the website's homepage-->
+        
         <?php
         if(!empty($_SESSION['LoggedIn']))
         {
@@ -17,6 +18,7 @@
         }
         }
         ?>
+        
         <div id="logo">
             <a href="index.php">
             <img src="homerecipes.png"/>

@@ -10,21 +10,21 @@
     
     <!-- This demo works with jquery library -->
 
-    <script type="text/javascript" src="mainjquery.js"></script>
-    <script type="text/javascript" src="mainjs.js"></script>
+    <script type="text/javascript" src="sidejquery.js"></script>
+    <script type="text/javascript" src="sidejs.js"></script>
     <!-- use jssor.slider.debug.js instead for debug -->
     <script>
         jQuery(document).ready(function ($) {
             
-            var main_div_SlideshowTransitions = [
+            var side_div_SlideshowTransitions = [
               {$Duration:1200,$Opacity:2}
             ];
             
-            var main_div_options = {
+            var side_div_options = {
               $AutoPlay: true,
               $SlideshowOptions: {
                 $Class: $JssorSlideshowRunner$,
-                $Transitions: main_div_SlideshowTransitions,
+                $Transitions: side_div_SlideshowTransitions,
                 $TransitionsOrder: 1
               },
               $ArrowNavigatorOptions: {
@@ -35,15 +35,15 @@
               }
             };
             
-            var main_div_slider = new $JssorSlider$("main_div", main_div_options);
+            var side_div_slider = new $JssorSlider$("side_div", side_div_options);
             
             //responsive code begin
             //you can remove responsive code if you don't want the slider scales while window resizing
             function ScaleSlider() {
-                var refSize = main_div_slider.$Elmt.parentNode.clientWidth;
+                var refSize = side_div_slider.$Elmt.parentNode.clientWidth;
                 if (refSize) {
                     refSize = Math.min(refSize, 600);
-                    main_div_slider.$ScaleWidth(refSize);
+                    side_div_slider.$ScaleWidth(refSize);
                 }
                 else {
                     window.setTimeout(ScaleSlider, 30);
@@ -112,7 +112,7 @@
     </style>
 
 
-    <div id="main_div" style="margin: 0 auto; top: 0px; left: 0px; width: 550px; height: 250px; overflow: hidden; visibility: hidden;">
+    <div id="side_div" style="margin: 0 auto; top: 0px; left: 0px; width: 550px; height: 250px; overflow: hidden; visibility: hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
@@ -120,13 +120,13 @@
         </div>
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 550px; height: 250px; overflow: hidden;">
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="ssimg/main1.jpg" />
+                <img data-u="image" src="./ssimg/side1.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="ssimg/main2.jpg" />
+                <img data-u="image" src="./ssimg/side2.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="ssimg/main3.jpg" />
+                <img data-u="image" src="./ssimg/side3.jpg" />
             </div>
             
         </div>

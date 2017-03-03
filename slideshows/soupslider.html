@@ -10,21 +10,21 @@
     
     <!-- This demo works with jquery library -->
 
-    <script type="text/javascript" src="saladjquery.js"></script>
-    <script type="text/javascript" src="saladjs.js"></script>
+    <script type="text/javascript" src="soupjquery.js"></script>
+    <script type="text/javascript" src="soupjs.js"></script>
     <!-- use jssor.slider.debug.js instead for debug -->
     <script>
         jQuery(document).ready(function ($) {
             
-            var salad_div_SlideshowTransitions = [
+            var soup_div_SlideshowTransitions = [
               {$Duration:1200,$Opacity:2}
             ];
             
-            var salad_div_options = {
+            var soup_div_options = {
               $AutoPlay: true,
               $SlideshowOptions: {
                 $Class: $JssorSlideshowRunner$,
-                $Transitions: salad_div_SlideshowTransitions,
+                $Transitions: soup_div_SlideshowTransitions,
                 $TransitionsOrder: 1
               },
               $ArrowNavigatorOptions: {
@@ -35,15 +35,15 @@
               }
             };
             
-            var salad_div_slider = new $JssorSlider$("salad_div", salad_div_options);
+            var soup_div_slider = new $JssorSlider$("soup_div", soup_div_options);
             
             //responsive code begin
             //you can remove responsive code if you don't want the slider scales while window resizing
             function ScaleSlider() {
-                var refSize = salad_div_slider.$Elmt.parentNode.clientWidth;
+                var refSize = soup_div_slider.$Elmt.parentNode.clientWidth;
                 if (refSize) {
                     refSize = Math.min(refSize, 600);
-                    salad_div_slider.$ScaleWidth(refSize);
+                    soup_div_slider.$ScaleWidth(refSize);
                 }
                 else {
                     window.setTimeout(ScaleSlider, 30);
@@ -112,7 +112,7 @@
     </style>
 
 
-    <div id="salad_div" style="margin: 0 auto; top: 0px; left: 0px; width: 550px; height: 250px; overflow: hidden; visibility: hidden;">
+    <div id="soup_div" style="margin: 0 auto; top: 0px; left: 0px; width: 550px; height: 250px; overflow: hidden; visibility: hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
@@ -120,13 +120,13 @@
         </div>
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 550px; height: 250px; overflow: hidden;">
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="ssimg/salad1.jpg" />
+                <img data-u="image" src="./ssimg/soup1.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="ssimg/salad2.jpg" />
+                <img data-u="image" src="./ssimg/soup2.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="ssimg/salad3.jpg" />
+                <img data-u="image" src="./ssimg/soup3.jpg" />
             </div>
             
         </div>

@@ -17,7 +17,7 @@
             <div id="mains">
                 <p>MAINS</P>
                 <div id='mainslide'>
-                    <?php include 'mainslider.php'; ?>
+                    <?php include './slideshows/mainslider.html'; ?>
                 </div>
             </div>
         </a>
@@ -25,7 +25,7 @@
             <div id="salads">
                 <p>SALADS</P>
                 <div id='saladslide'>
-                    <?php include 'saladslider.php'; ?>
+                    <?php include './slideshows/saladslider.html'; ?>
                 </div>
             </div>
         </a>
@@ -33,7 +33,7 @@
             <div id="soups">
                 <p>SOUPS</p>
                 <div id='soupslide'>
-                    <?php include 'soupslider.php'; ?>
+                    <?php include './slideshows/soupslider.html'; ?>
                 </div>
             </div>
         </a>
@@ -41,7 +41,7 @@
             <div id="sides">
                 <p>SIDES</p>
                 <div id='sideslide'>
-                    <?php include 'sideslider.php'; ?>
+                    <?php include './slideshows/sideslider.html'; ?>
                 </div>
             </div>    
         </a>
@@ -49,7 +49,7 @@
             <div id="desserts">
                 <p>DESSERTS</p>
                 <div id='dessertslide'>
-                    <?php include 'dessertslider.php'; ?>
+                    <?php include './slideshows/dessertslider.html'; ?>
                 </div>
             </div>
         </a>
