@@ -1,7 +1,7 @@
-
 <?php
     session_start();
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -35,8 +35,9 @@
         <!--The menu is included into the header of each webpage-->
         <?php
             include 'menu/jsmenu.php';  
-        ?>
-        
+        ?>      
     
         <!--This generates a space beneath the header and the body of each webpage-->
         <div id="menuspace"></div>
+	</head>
+</html>        

@@ -88,9 +88,6 @@
             </form>
         </div>
 
-        <?php
-            //include the footer in the file without rewriting code
-            include 'Footer.php';
-        ?>
+       <?php include 'Footer.html'; ?>
     </body>
 </html>

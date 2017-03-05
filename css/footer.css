@@ -1,4 +1,3 @@
-*footer*/
 /*this styling is for the whole footer
 the height should be enough to fit the content
 the width should go across the whole screen
@@ -31,6 +30,11 @@ and there should be no bullets*/
 /*this is styling for the links in the footer
 they should not be underlined*/
 .footer a:link{
+   color: #663300;
+   text-decoration: none;
+}
+
+.footer a:visited{
    color: #663300;
    text-decoration: none;
 }

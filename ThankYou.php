@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <?php
-            //include the menu (really the menu will be included in the header)
-            include 'header.php';
-        ?>  
+        <?php include 'header.php'; ?>  
         <title>Thank You | HomeRecipes</title>
     </head>
     <body>
@@ -17,7 +14,5 @@
                 <img src="homerecipes.png" style="height: 100px; width: auto"/>
             </a>
         </div>
-        <?php
-            include 'footer.php';
-        ?>
+        <?php include 'Footer.html'; ?>
     </body>

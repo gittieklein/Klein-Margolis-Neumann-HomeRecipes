@@ -3,10 +3,7 @@
         <link rel="stylesheet" href="Recipes.css">
         <title>Sides | HomeRecipes</title>
 
-        <?php
-            //include the menu (really the menu will be included in the header)
-            include 'header.php';
-        ?>
+        <?php include 'header.php';  ?>
         
     </head>
     <body>
@@ -61,7 +58,4 @@
             }
         ?></p>
         
-        <?php
-            //include the footer in the file without rewriting code
-            include 'Footer.php';
-        ?>
+        <?php include 'Footer.html'; ?>

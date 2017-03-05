@@ -5,10 +5,7 @@
 <html>
     <head>
         <title>Content | HomeRecipes</title>
-        <?php
-            //include the menu (really the menu will be included in the header)
-            include 'header.php';
-        ?>
+        <?php include 'header.php'; ?>
     </head>
     <body>
         <?php
@@ -24,7 +21,7 @@
                 }
             
             //include the footer in the file without rewriting code
-            include 'Footer.php';
+            include 'Footer.html';
         ?>
     </body>
 </html>

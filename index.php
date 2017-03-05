@@ -1,13 +1,12 @@
 
+		
         <meta charset="UTF-8">
         <!--attach the css file-->
         <link rel="stylesheet" href="Recipes.css">
+         <link rel="stylesheet" href="css/homepage.css">
         <title>Home | HomeRecipe</title>
 
-        <?php
-            //include the menu (really the menu will be included in the header)
-            include 'header.php';
-        ?>
+        <?php include 'header.php'; ?>
         
     </head>
     <body>
@@ -53,7 +52,4 @@
                 </div>
             </div>
         </a>
-        <?php
-            //include the footer in the file without rewriting code
-            include 'Footer.php';
-        ?>
+        <?php include 'Footer.html';  ?>
