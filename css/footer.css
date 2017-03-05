@@ -1,0 +1,52 @@
+*footer*/
+/*this styling is for the whole footer
+the height should be enough to fit the content
+the width should go across the whole screen
+float is set to bottom so it should be under the body*/
+.footer{
+    height: fit-content;
+    width: 100%;
+    font-family: Calibri;
+    float: bottom;
+    position: relative; 
+    margin-top: 70px;
+    border-top: #a91f23;
+    border-style: solid;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+}
+   
+/*this styling is for the list in the footer
+the text shoudl be centered
+the font should be bold
+and there should be no bullets*/
+.footer ul li{
+    text-align: center;
+    font-weight: bold;
+    list-style: none;
+    margin-left: -40px;
+}
+
+/*this is styling for the links in the footer
+they should not be underlined*/
+.footer a:link{
+   color: #663300;
+   text-decoration: none;
+}
+
+/*styling for when hovering over a link
+it should change to white
+and it should not be underlined*/
+.footer a:hover{
+    color: #a91f23;
+    text-decoration: none;
+}
+
+/*the copy right should be right aligned*/
+.footer p{
+    text-align: right;
+    color: #663300;
+    font-family: Calibri;
+    font-weight: bold; 
+}

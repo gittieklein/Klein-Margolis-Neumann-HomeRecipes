@@ -1,3 +1,5 @@
+        <link rel="stylesheet" href="css/footer.css">
+        
         <!--the footer is names the class footer which will help in styling-->
         <div class="footer">
             <ul>

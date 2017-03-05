@@ -7,6 +7,8 @@
     <head>
         <!--attach the css file-->
         <link rel="stylesheet" href="Recipes.css">
+        <link rel="stylesheet" href="css/header.css">
+        
         <!--Logo that is connected to a link to the website's homepage-->
         
         <?php
@@ -32,7 +34,7 @@
       
         <!--The menu is included into the header of each webpage-->
         <?php
-            include 'menu.php';  
+            include 'menu/jsmenu.php';  
         ?>
         
     

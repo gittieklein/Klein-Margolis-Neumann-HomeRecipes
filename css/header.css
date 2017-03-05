@@ -1,0 +1,64 @@
+/*the header/menu*/
+/*edit the size of the logo*/
+#logo img{
+    height:150px;
+    width:auto;
+}
+
+/*This is a search bar to search for anything on the website*/
+#search {
+    position:absolute;       /*to position the search bar near the menu*/
+    margin-left: 840px;      /*to position the searchbar on the right side of the page*/
+    margin-top: 50px;
+    width: 200px;
+    height: 46px;
+    box-sizing: border-box;  /*include the border in within the size*/
+    border: 2px solid #ccc;
+    border-radius: 4px;      /*round the edges of the search bar*/
+    font-size: 16px;
+    background-color: white;
+    background-size: 15%;
+    background-position: 2px 2px;
+                             /*an image of a magnifying glass for the search bar*/
+    background-image: url('http://www.clker.com/cliparts/9/T/2/h/X/7/search-icon-md.png');
+    background-repeat: no-repeat; /*only display the image onece*/
+    padding: 12px 20px 12px 40px;  /*create white space around the image*/
+    z-index: 2;
+   
+}
+
+/*search tab to generate the search*/
+#submit{
+    margin-left: 1040px;
+    margin-top:50px;
+    position:absolute;      /*to position the search tab near the menu*/
+    width: 60px;
+    height: 46px;
+    z-index: 2;
+}
+
+/*A tab that is a link for the user to login, or create an account*/
+.login{
+    
+    float: right;
+    text-indent: 915px;    /*to position the text to the right of the page*/
+    font-size: 25px;
+    font-family:Calibri;
+    
+   
+}
+
+.login a{
+    color: #663300;
+    text-decoration:none;  /*do not underline the link*/
+}  
+
+/*Make the vertical line between the "Join Free" and "Login" option a different color*/
+.login span{
+    color:#a91f23;
+}
+
+/*Create a hover style for the "Join Free" and "Login"*/
+.login a:hover{
+    color: #a91f23;
+}
